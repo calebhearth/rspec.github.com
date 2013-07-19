@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,700);
 /* line 2, ../sass/neat/grid/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -5,7 +6,7 @@
   box-sizing: border-box;
 }
 
-/* line 4, ../sass/main.sass */
+/* line 5, ../sass/main.sass */
 main {
   *zoom: 1;
   max-width: 68em;
@@ -22,20 +23,28 @@ main:after {
   clear: both;
 }
 
-/* line 7, ../sass/main.sass */
+/* line 8, ../sass/main.sass */
 h1 {
   font-size: 5em;
   margin-bottom: 0.3em;
+  font-family: Lato, serif;
+  font-weight: 300;
+  color: #a30000;
+}
+/* line 14, ../sass/main.sass */
+h1:first-letter {
+  font-weight: 700;
+  font-style: italic;
 }
 
-/* line 11, ../sass/main.sass */
+/* line 18, ../sass/main.sass */
 h2 {
   font-size: 2em;
   width: 100%;
   border-bottom: 1px solid #cc0000;
 }
 
-/* line 16, ../sass/main.sass */
+/* line 23, ../sass/main.sass */
 section {
   *zoom: 1;
   display: block;
@@ -50,15 +59,15 @@ section:after {
   clear: both;
 }
 
-/* line 20, ../sass/main.sass */
+/* line 27, ../sass/main.sass */
 .expectation code {
   display: block;
   float: left;
   margin-right: 2.35765%;
   width: 65.88078%;
   margin-left: 17.05961%;
-  border: 1px solid #aaaaaa;
-  background-color: black;
+  border: 1px solid maroon;
+  background-color: #1a0000;
   padding: 0.2em 0.3em;
   font-size: 3.4em;
   border-radius: 5px;
@@ -67,19 +76,19 @@ section:after {
 .expectation code:last-child {
   margin-right: 0;
 }
-/* line 29, ../sass/main.sass */
+/* line 36, ../sass/main.sass */
 .expectation code .n:first-child {
   color: #15eff0;
 }
-/* line 32, ../sass/main.sass */
-.expectation code .n {
+/* line 39, ../sass/main.sass */
+.expectation code .n, .expectation code .o {
   color: #fbde8f;
 }
-/* line 35, ../sass/main.sass */
+/* line 42, ../sass/main.sass */
 .expectation code .p {
   color: #7e7f80;
 }
-/* line 37, ../sass/main.sass */
+/* line 45, ../sass/main.sass */
 .expectation code .ss {
   color: #8290e7;
 }

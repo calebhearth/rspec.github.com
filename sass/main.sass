@@ -1,5 +1,6 @@
 @import 'bourbon/bourbon'
 @import 'neat/neat'
+@import url(http://fonts.googleapis.com/css?family=Lato:300,700)
 
 main
   @include outer-container
@@ -7,6 +8,12 @@ main
 h1
   font-size: 5em
   margin-bottom: .3em
+  font-family: Lato, serif
+  font-weight: 300
+  color: darken(#c00, 8)
+  &:first-letter
+    font-weight: 700
+    font-style: italic
 
 h2
   font-size: 2em
@@ -20,8 +27,8 @@ section
   code
     @include span-columns(8)
     @include shift(2)
-    border: 1px solid #AAA
-    background-color: black
+    border: 1px solid darken(#c00, 15)
+    background-color: darken(#c00, 35)
     padding: .2em .3em
     font-size: 3.4em
     border-radius: 5px
@@ -29,10 +36,11 @@ section
     .n:first-child
       color: #15eff0
 
-    .n
+    .n, .o
       color: #fbde8f
 
     .p
       color: #7e7f80
+
     .ss
       color: #8290e7
