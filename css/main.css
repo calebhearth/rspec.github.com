@@ -1,164 +1,85 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
-
-/* Global Reset */
+/* line 2, ../sass/neat/grid/_grid.scss */
 * {
-  margin: 0;
-  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body { height: 100%; }
-
-body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
+/* line 4, ../sass/main.sass */
+main {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 18, ../sass/bourbon/addons/_clearfix.scss */
+main:before, main:after {
+  content: " ";
+  display: table;
+}
+/* line 23, ../sass/bourbon/addons/_clearfix.scss */
+main:after {
+  clear: both;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
-
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
-
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
-
-table {
-  font-size: inherit;
-  font: 100%;
+/* line 7, ../sass/main.sass */
+h1 {
+  font-size: 5em;
+  margin-bottom: 0.3em;
 }
 
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-ul.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
+/* line 11, ../sass/main.sass */
+h2 {
+  font-size: 2em;
+  width: 100%;
+  border-bottom: 1px solid #cc0000;
 }
 
-ul.posts li {
-  line-height: 1.75em;
+/* line 16, ../sass/main.sass */
+section {
+  *zoom: 1;
+  display: block;
+}
+/* line 18, ../sass/bourbon/addons/_clearfix.scss */
+section:before, section:after {
+  content: " ";
+  display: table;
+}
+/* line 23, ../sass/bourbon/addons/_clearfix.scss */
+section:after {
+  clear: both;
 }
 
-ul.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
-}
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
-}
-
-.site .header a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.site .header h1.title {
-  display: inline-block;
-  margin-bottom: 2em;
-}
-
-.site .header h1.title a {
-  color: #a00;
-}
-
-.site .header h1.title a:hover {
-  color: #000;
-}
-
-.site .header a.extra {
-  color: #aaa;
-  margin-left: 1em;
-}
-
-.site .header a.extra:hover {
-  color: #000;
-}
-
-.site .meta {
-  color: #aaa;
-}
-
-.site .footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden;
-}
-
-.site .footer .contact {
+/* line 20, ../sass/main.sass */
+.expectation code {
+  display: block;
   float: left;
-  margin-right: 3em;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  border: 1px solid #aaaaaa;
+  background-color: black;
+  padding: 0.2em 0.3em;
+  font-size: 3.4em;
+  border-radius: 5px;
 }
-
-.site .footer .contact a {
-  color: #8085C1;
+/* line 41, ../sass/neat/grid/_span-columns.scss */
+.expectation code:last-child {
+  margin-right: 0;
 }
-
-.site .footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
+/* line 29, ../sass/main.sass */
+.expectation code .n:first-child {
+  color: #15eff0;
 }
-
-.site .footer .rss img {
-  border: 0;
+/* line 32, ../sass/main.sass */
+.expectation code .n {
+  color: #fbde8f;
 }
-
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
+/* line 35, ../sass/main.sass */
+.expectation code .p {
+  color: #7e7f80;
 }
-
-.post ul, .post ol {
-  margin-left: 1.35em;
-}
-
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
-}
-
-.post pre code {
-  border: none;
-}
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
-
-.post pre.terminal code {
-  background-color: #333;
+/* line 37, ../sass/main.sass */
+.expectation code .ss {
+  color: #8290e7;
 }

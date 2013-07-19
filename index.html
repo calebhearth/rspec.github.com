@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<article>
+  <h1>RSpec</h1>
+
+  <section class='expectation'>
+{% highlight ruby %}
+expect(testing).to be :fun
+{% endhighlight %}
+  </section>
+
+  <section class='overview'>
+    {% capture overview_content %}{% include overview.md %}{% endcapture %}
+    {{ overview_content | unindent | markdownify }}
+  </section>
+  <section class='documentation'>
+    {% capture documentation_content %}{% include documentation.md %}{% endcapture %}
+    {{ documentation_content | unindent | markdownify }}
+  </section>
+  <section class='rspec-book'>
+    {% capture rspec_book_content %}{% include rspec_book.md %}{% endcapture %}
+    {{ rspec_book_content | unindent | markdownify }}
+  </section>
+  <section class='get-started-now'>
+    {% capture get_started_now_content %}{% include get_started_now.md %}{% endcapture %}
+    {{ get_started_now_content | unindent | markdownify }}
+  </section>
+</article>

@@ -30,6 +30,7 @@ GEM
       yajl-ruby (~> 1.1.0)
     redcarpet (2.2.2)
     safe_yaml (0.7.1)
+    sass (3.2.9)
     syntax (1.0.0)
     yajl-ruby (1.1.0)
 
@@ -39,3 +40,4 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   redcarpet
+  sass

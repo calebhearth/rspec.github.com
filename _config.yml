@@ -1,3 +1,4 @@
 name: RSpec
 markdown: redcarpet
 pygments: true
+exclude: sass

@@ -1,0 +1,38 @@
+@import 'bourbon/bourbon'
+@import 'neat/neat'
+
+main
+  @include outer-container
+
+h1
+  font-size: 5em
+  margin-bottom: .3em
+
+h2
+  font-size: 2em
+  width: 100%
+  border-bottom: 1px solid #c00
+
+section
+  @include row
+
+.expectation
+  code
+    @include span-columns(8)
+    @include shift(2)
+    border: 1px solid #AAA
+    background-color: black
+    padding: .2em .3em
+    font-size: 3.4em
+    border-radius: 5px
+
+    .n:first-child
+      color: #15eff0
+
+    .n
+      color: #fbde8f
+
+    .p
+      color: #7e7f80
+    .ss
+      color: #8290e7
